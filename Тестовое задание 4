@@ -6,8 +6,8 @@ for symb in user_input:
 
 for symb in user_input:
     if symb_counts[symb] == 1:
-        print('"' + symb + '"')
+        print(symb)
         break
     else:
-        print('""')
+        print('')
         break
