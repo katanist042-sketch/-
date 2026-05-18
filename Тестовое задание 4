@@ -1,0 +1,13 @@
+user_input=input("ввод: ")
+
+symb_counts = {}
+for symb in user_input:
+    symb_counts[symb] = symb_counts.get(symb, 0) + 1
+
+for symb in user_input:
+    if symb_counts[symb] == 1:
+        print('"' + symb + '"')
+        break
+    else:
+        print('""')
+        break
