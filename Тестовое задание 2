@@ -1,0 +1,10 @@
+import re
+user_input=input("ввод")
+numbers_int=re.findall(r'-?\d+', user_input)
+input_array = [int(x) for x in numbers_int]
+if not input_array:
+    print("массив пуст")
+else:
+    reversed_array = input_array[::-1]
+
+print(reversed_array)
