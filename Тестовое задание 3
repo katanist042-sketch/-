@@ -1,0 +1,6 @@
+user_input=input("ввод:")
+reversed_array = user_input[::-1]
+if user_input == reversed_array:
+    print("true")
+else:
+  print("false")
