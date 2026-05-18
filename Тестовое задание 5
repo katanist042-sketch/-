@@ -1,0 +1,11 @@
+user_input = int(input("ввод: "))
+array = [0]
+if user_input>=1:
+    array.append(1)
+while True:
+    next_number = array[-1] + array[-2] #складывает два последних числа массива
+    if next_number<=user_input:
+        array.append(next_number)
+    else:
+        break
+print(array)
